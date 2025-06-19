@@ -8,3 +8,100 @@ body {
 html {
   background-color: black;
 }
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes marquee-projects {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 20s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 25s linear infinite;
+}
+
+.animate-marquee-left-slow {
+  animation: marquee-left 30s linear infinite;
+}
+
+.animate-marquee-projects {
+  animation: marquee-projects 40s linear infinite;
+}
+
+/* Optional: Pause on hover */
+.tech-marquee-animation:hover > div {
+  animation-play-state: paused;
+}
+
+.project-marquee-animation:hover > div {
+  animation-play-state: paused;
+}
+
+/* Animated border glow effect */
+.glow-border-effect {
+  position: relative;
+  z-index: 0;
+}
+
+.glow-border-effect:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: -1px;
+  padding: 1px;
+  border-radius: 16px;
+  background: linear-gradient(
+    45deg,
+    rgba(100, 220, 255, 0.5),
+    rgba(180, 120, 255, 0.5),
+    rgba(255, 140, 200, 0.5),
+    rgba(100, 220, 255, 0.5)
+  );
+  background-size: 400% 400%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glow-border-effect:hover:before {
+  opacity: 1;
+  animation: animatedgradient 3s ease infinite;
+}
+
+@keyframes animatedgradient {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+.glow-border-effect:hover {
+  box-shadow:
+    0 0 10px rgba(100, 220, 255, 0.3),
+    0 0 30px rgba(100, 200, 255, 0.15);
+}
+
+
+
