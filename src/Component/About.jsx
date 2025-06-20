@@ -1,5 +1,4 @@
 import React from "react";
-import Particles from "../../Reactbits/Particles/Particles";
 import ProfileCard from "../../Reactbits/ProfileCard/ProfileCard";
 import SpotlightCard from "../../Reactbits/SpotlightCard/SpotlightCard";
 import GradientText from "../../Reactbits/GradientText/GradientText";
@@ -11,20 +10,6 @@ const About = () => {
       id="about"
       className="px-4 py-12 md:py-20 relative z-10 max-w-7xl mx-auto"
     >
-      {/* Particles Background - Fixed position to cover entire viewport */}
-      <div className="fixed inset-0 w-full h-full -z-10 pointer-events-none">
-        <Particles
-          particleColors={["#ffffff", "#ffffff"]}
-          particleCount={200}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={false}
-        />
-      </div>
-
       <GradientText
         colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
         animationSpeed={3}
@@ -53,7 +38,6 @@ const About = () => {
         </div>
 
         {/* Right Side - Content */}
-
         <SpotlightCard
           className="custom-spotlight-card md:w-1/2 bg-white/5 backdrop-blur-md p-8 rounded-xl border border-white/10"
           spotlightColor="rgba(10, 92, 222, 0.426)"

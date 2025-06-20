@@ -206,12 +206,12 @@ const Nav = () => {
 
         {/* CTA Button */}
         <Link
-          to="/contact"
+          to="https://calendar.app.google/adxz9AnAoNZ2BxB5A"
           className={`hidden md:flex items-center space-x-1 backdrop-blur-sm text-white px-4 py-1.5 rounded-full transition-all duration-300 border border-white/30 text-sm ml-4
             ${isSectionActive("/contact") ? "bg-white/30" : "bg-white/10 hover:bg-white/20"}`}
           onMouseEnter={() => setHoveredItem("contact")}
           onMouseLeave={() => setHoveredItem(null)}
-          onClick={(e) => handleNavClick(e, "/contact")}
+          // onClick={(e) => handleNavClick(e, "https://calendar.app.google/adxz9AnAoNZ2BxB5A")}
         >
           <motion.span
             animate={{
@@ -305,12 +305,12 @@ const Nav = () => {
                 className="w-full"
               >
                 <Link
-                  to="/contact"
+                  to="https://calendar.app.google/adxz9AnAoNZ2BxB5A"
                   className={`py-3 rounded-full mt-4 text-white flex items-center justify-center gap-2 w-full
                     ${isSectionActive("/contact")
                       ? "bg-white/30 border border-white/40"
                       : "bg-white/10 border border-white/20 hover:bg-white/20"}`}
-                  onClick={(e) => handleNavClick(e, "/contact")}
+                  // onClick={(e) => handleNavClick(e, "https://calendar.app.google/adxz9AnAoNZ2BxB5A")}
                 >
                   <FaPhoneAlt size={18} />
                   Book a Call

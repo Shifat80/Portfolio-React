@@ -47,7 +47,7 @@ const BangladeshTime = () => {
 
   return (
     <>
-      <div className="text-sm text-zinc-500">Bangladesh</div>
+      <div className="text-sm  text-zinc-500">Bangladesh</div>
       <div className="text-zinc-200 font-medium flex items-center">
         <span>{currentTime}</span>
         <div className="ml-1.5 w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></div>
@@ -281,21 +281,9 @@ const Feature = () => {
             <h3 className="text-xl font-bold mb-8 text-blue-300 drop-shadow-lg">
               I'm very flexible with time zone communications
             </h3>
-
-            <div className="flex gap-2 mb-8">
-              <div className="timezone-pill">
-                <span className="text-zinc-200">UK</span>
-              </div>
-              <div className="timezone-pill bg-blue-500/20 border-blue-400/40">
-                <span className="text-blue-300">Bangladesh</span>
-              </div>
-              <div className="timezone-pill">
-                <span className="text-zinc-200">USA</span>
-              </div>
-            </div>
           </div>
 
-          <div className="mt-auto absolute bottom-6 left-6 z-10 glassmorphism-mini">
+          <div className=" absolute bottom-6 left-6 z-20  glassmorphism-mini">
             <BangladeshTime />
           </div>
         </motion.div>

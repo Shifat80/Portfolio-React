@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Orb from "../../Reactbits/Orb/Orb";
 import BlurText from "../../Reactbits/BlurText/BlurText";
 import GradientText from "../../Reactbits/GradientText/GradientText";
+import { Link } from "react-router";
+
 
 
 
@@ -90,11 +92,11 @@ const Hero = () => {
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 group-hover:w-full transition-all duration-500 ease-in-out"></span>
             </button>
 
-            <button className="px-8 py-3 border border-white font-bold rounded-full transition-all duration-500 ease-in-out relative group overflow-hidden cursor-pointer text-lg bg-white/10 hover:bg-white/20 shadow-lg">
+            <Link to={"https://www.linkedin.com/in/mehedi-hasan-shifat/"} className="px-8 py-3 border border-white font-bold rounded-full transition-all duration-500 ease-in-out relative group overflow-hidden cursor-pointer text-lg bg-white/10 hover:bg-white/20 shadow-lg">
               <span className="relative z-10">📬 Let's Connect</span>
               <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 opacity-0 group-hover:opacity-20 transition-opacity duration-500"></span>
               <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 group-hover:w-full transition-all duration-500 ease-in-out"></span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
