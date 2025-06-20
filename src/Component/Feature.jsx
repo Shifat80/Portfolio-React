@@ -94,7 +94,7 @@ const Feature = () => {
           <div className="flex justify-center mb-8 relative z-10">
             <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-purple-400/60 shadow-lg">
               <img
-                src="/Adobe Express - file.png"
+                src="/profile.png"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
@@ -107,9 +107,9 @@ const Feature = () => {
                 colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
                 animationSpeed={3}
                 showBorder={false}
-                className="font-bold text-start text-2xl"
+                className="font-bold text-center h-24 p-2 text-2xl"
               >
-                <RiTeamLine className="text-2xl text-white" /> Collaboration
+                 Collaboration
                 <p>
                   I prioritize client collaboration, fostering open communication
                 </p>
