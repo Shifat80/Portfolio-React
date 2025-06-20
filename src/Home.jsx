@@ -8,14 +8,17 @@ import Feature from "./Component/Feature";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <Nav></Nav>
-      <main className="mt-16">
-        <Hero></Hero>
-        <Feature></Feature>
-        <Outlet></Outlet>
-        <Work></Work>
-      </main>
+    <div className="min-h-screen bg-black text-white relative">
+
+      <div className="relative z-10">
+        <Nav />
+        <main className="mt-16">
+          <Hero />
+          <Feature />
+          <Outlet />
+          <Work />
+        </main>
+      </div>
     </div>
   );
 };

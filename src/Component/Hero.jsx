@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="absolute inset-x-0 bottom-0 flex items-end justify-center">
           <div
             className="relative translate-y-3/6 w-[80%] aspect-square z-0 pointer-events-none"
-            style={{ transform: "translateY(20%) scale(1.2)" }}
+            style={{ transform: "translateY(20%) scale(1.2)", pointerEvents: "none" }}
           >
             <Orb
               hoverIntensity={0}
@@ -34,18 +34,8 @@ const Hero = () => {
             delay={100}
             animateBy="words"
             direction="top"
-            // onAnimationComplete={handleAnimationComplete}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-2 sm:mb-4 text-center text-white drop-shadow-lg"
           />
-
-          {/* <GradientText
-            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-            animationSpeed={3}
-            showBorder={false}
-            className="custom-class"
-          >
-           Shifat
-          </GradientText> */}
 
           <BlurText
             text="Full-Stack Developer"
