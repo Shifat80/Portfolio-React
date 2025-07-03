@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import CircularText from "../../Reactbits/CircularText/CircularText";
 import { Link, useLocation } from "react-router";
 import { motion, AnimatePresence } from "framer-motion";
 // Import React Icons
@@ -138,7 +137,7 @@ const Nav = () => {
 
   return (
     <header className="fixed w-full top-0 z-50 flex justify-center py-5">
-      {/* Circular Text Logo - Positioned outside navbar */}
+      {/* Desktop Logo - Positioned outside navbar */}
       <motion.div
         className="fixed top-6 md:top-8 left-4 md:left-8 z-50 h-10 w-10 md:h-14 md:w-14 hidden md:block"
         initial={{ opacity: 0, scale: 0.8 }}
@@ -147,11 +146,10 @@ const Nav = () => {
         whileHover={{ scale: 1.1 }}
       >
         <Link to="/" className="block" onClick={(e) => handleNavClick(e, "/")}>
-          <CircularText
-            text="MEHEDI HASAN"
-            onHover="speedUp"
-            spinDuration={20}
-            className="w-full h-full pt-2.5"
+          <img
+            src="/shifat.png"
+            alt="Shifat Logo"
+            className="w-full h-full object-contain rounded-full"
           />
         </Link>
       </motion.div>
@@ -211,7 +209,6 @@ const Nav = () => {
             ${isSectionActive("/contact") ? "bg-white/30" : "bg-white/10 hover:bg-white/20"}`}
           onMouseEnter={() => setHoveredItem("contact")}
           onMouseLeave={() => setHoveredItem(null)}
-          // onClick={(e) => handleNavClick(e, "https://calendar.app.google/adxz9AnAoNZ2BxB5A")}
         >
           <motion.span
             animate={{
@@ -228,11 +225,10 @@ const Nav = () => {
         <div className="md:hidden flex items-center justify-between w-full">
           <Link to="/" className="flex items-center" onClick={(e) => handleNavClick(e, "/")}>
             <motion.div className="h-10 w-10">
-              <CircularText
-                text="S*H*I*F*T*"
-                onHover="speedUp"
-                spinDuration={20}
-                className="w-full h-full"
+              <img
+                src="/shifat.png"
+                alt="Shifat Logo"
+                className="w-full h-full object-contain rounded-full"
               />
             </motion.div>
           </Link>
@@ -310,7 +306,6 @@ const Nav = () => {
                     ${isSectionActive("/contact")
                       ? "bg-white/30 border border-white/40"
                       : "bg-white/10 border border-white/20 hover:bg-white/20"}`}
-                  // onClick={(e) => handleNavClick(e, "https://calendar.app.google/adxz9AnAoNZ2BxB5A")}
                 >
                   <FaPhoneAlt size={18} />
                   Book a Call
